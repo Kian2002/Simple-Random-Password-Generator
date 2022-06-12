@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+      * {
+        font-family: 'Manrope', sans-serif;
+      }
+
+      body {
+        background-color: rgb(29, 29, 69);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+        width: auto;
+      }
+      #div1 {
+        border: 2px solid aqua;
+        border-radius: 20px;
+        padding: 150px;
+        max-width: 150px;
+        min-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      #div2 {
+        display: flex;
+        gap: 30px;
+      }
+
+      #txt {
+        color: rgb(0, 0, 0);
+        border: solid 2px rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 20px;
+      }
+
+      #header {
+        color: aqua;
+        font-size: x-large;
+        text-align: center;
+        width: 350px;
+        height: auto;
+      }
+
+      button {
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border-radius: 12px;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        border-color: transparent;
+      }
+
+      button:hover {
+        background-color: aqua;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <h1 id="header">Random Password Generator</h1>
+      <input type="text" id="txt" value="">
+      <div id="div2">
+        <button onclick="randomPass()">Generate</button>
+        <button id="copy" onclick="copyPassword()">Copy</button>
+      </div>
+    </div>
+  </body>
+</html>
