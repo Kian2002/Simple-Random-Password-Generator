@@ -10,7 +10,6 @@ function randomPass() {
   document.getElementById('txt').value = password;
 }
 
-//create a function that copies the password to the clipboard
 function copyPassword() {
   let copyText = document.getElementById('txt');
   copyText.select();
